@@ -1,0 +1,54 @@
+.advantages {}
+
+.advantages__wrapper {
+
+}
+
+.advantages__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.advantages__list {
+  margin: 20px;
+  padding: 0;
+}
+
+.advantages-item {
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: $green;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 45%;
+    transform: translate(-50%);
+    background: url("../../icons/leaf-adv.svg") no-repeat 0 0;
+    z-index: 5;
+  }
+}
+
+.advantages__text {
+  padding-left: 100px;
+  width: 200px;
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+  position: relative;
+}

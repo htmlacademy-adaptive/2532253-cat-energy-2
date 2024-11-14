@@ -1,29 +1,69 @@
 .goals {
-  display: block;
+}
+
+.goals__wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 15%;
+    transform: translate(-50%);
+    background: url("../../images/cat-slim.svg") no-repeat 0 0;
+    z-index: 5;
+  }
+
+  &::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    bottom: 220px;
+    left: 15%;
+    transform: translate(-50%);
+    background: url("../../images/cat-pro.svg") no-repeat 0 0;
+    z-index: 5;
+  }
 }
 
 .goals__list {
   margin: 20px;
-  padding: 20px;
+  padding: 0;
+  display: block;
 }
 
 .goals__item {
   background-color: #f2f2f2;
   list-style: none;
-  width: 280px;
   height: 266px;
   margin-bottom: 20px;
+  padding: 11px 5px 9px;
+  position: relative;
+}
+
+.goals__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $green;
+  position: absolute;
+  left: 20px;
+  top: 24px;
 }
 
 .goals__title {
   font-family: $oswald;
-  font-size: 24px;
   font-weight: 400;
+  font-size: 24px;
   line-height: 37px;
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 17px;
+  text-transform: uppercase;
 }
 
 .goals__text {
@@ -34,7 +74,13 @@
   text-align: left;
   color: #444444;
   margin: 0;
-  padding-top: 29px;
+  padding: 20px 29px;
+}
+
+.goals__line {
+  border: 1px solid #d9d9d9;
+  margin: 0 20px;
+  padding: 0;
 }
 
 .goal__button {
@@ -42,4 +88,17 @@
   height: 24px;
   border: none;
   text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    position: absolute;
+    left: 110%;
+    transform: translate(-50%);
+    background: url("../../images/arrow-goals.svg") no-repeat 0 0;
+  }
 }
