@@ -2,14 +2,18 @@
 
 .description__wrapper {
   background: #eaeaea;
+  padding: 20px;
 }
 
 .description__title {
+  margin: 0;
+  padding: 0;
   font-family: $oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .description__text {
@@ -19,21 +23,25 @@
   line-height: 18px;
   text-align: left;
   color: #444444;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .results-list {
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  gap: 32px;
 }
 
 .result-item {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: 124px 124px;
-  border: 1px solid #cdcdcd;
-  gap: 32px;
 }
 
 .result {
@@ -58,4 +66,6 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 20px 0 0;
 }

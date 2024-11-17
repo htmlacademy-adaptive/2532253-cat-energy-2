@@ -1,7 +1,7 @@
-.advantages {}
-
-.advantages__wrapper {
-
+.advantages {
+  padding-top: 20px;
+  margin: 0 20px;
+  padding-bottom: 20px;
 }
 
 .advantages__title {
@@ -9,41 +9,83 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
-  margin: 0;
+  text-align: left;
+  margin: 0 0 40px;
   padding: 0;
-  padding-top: 20px;
-  text-transform: uppercase;
 }
 
 .advantages__list {
-  margin: 20px;
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.advantages-item {
-  list-style: none;
-  width: 60px;
-  height: 60px;
-  background: $green;
+.advantages__item {
   position: relative;
+  min-height: 60px;
+  margin-bottom: 18px;
+  padding-left: 81px;
+  padding-top: 2px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: $green;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
   &::after {
     content: "";
-    width: 30px;
-    height: 32px;
     position: absolute;
-    top: 15px;
-    left: 45%;
-    transform: translate(-50%);
-    background: url("../../icons/leaf-adv.svg") no-repeat 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
     z-index: 5;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
+.advantages__item--leaf::after {
+  background-image: url("../../icons/leaf-adv.svg");
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 15px;
+}
+
+.advantages__item--boil::after {
+  background-image: url("../../icons/boil-adv.svg");
+  width: 26px;
+  height: 29px;
+  left: 15px;
+  top: 18px;
+}
+
+.advantages__item--eat::after {
+  background-image: url("../../icons/eat-adv.svg");
+  width: 25px;
+  height: 30px;
+  left: 15px;
+  top: 18px;
+}
+
+.advantages__item--clock::after {
+  background-image: url("../../icons/clock-adv.svg");
+  width: 26px;
+  height: 31px;
+  left: 15px;
+  top: 17px;
+}
+
 .advantages__text {
-  padding-left: 100px;
-  width: 200px;
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
   font-family: $lato;
   font-size: 14px;
   font-weight: 400;

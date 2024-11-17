@@ -44,49 +44,40 @@
         </div>
       </div>
       <a class="link hero__link" href="#">Подобрать программу</a>
-
     </section>
 
     <section class="goals">
-      <div class="goals__wrapper">
-        <h2 class="visually-hidden">Выбор цели питания для котика</h2>
-        <ul class="goals__list">
-          <li class="goals__item">
-            <div class="goals__circle"></div>
-            <h3 class="goals__title">Похудение</h3>
-            <p class="goals__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <div class="goals__line"></div>
-            <button class="button goal__button" type="button">Каталог slim</button>
-          </li>
-          <li class="goals__item">
-            <div class="goals__circle"></div>
-            <h3 class="goals__title">Набор массы</h3>
-            <p class="goals__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <div class="goals__line"></div>
-            <button class="button goal__button" type="button">Каталог pro</button>
-          </li>
-        </ul>
-      </div>
+      <h2 class="visually-hidden">Выбор цели питания для котика<h2>
+          <ul class="goals__list">
+            <li class="goals__item goals__item--slim">
+              <h3 class="goals__title">Похудение</h3>
+              <p class="goals__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a href="#" class="link goal__link">Каталог slim</a>
+            </li>
+            <li class="goals__item goals__item--pro">
+              <h3 class="goals__title">Набор массы</h3>
+              <p class="goals__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a href="#" class="link goal__link">Каталог pro</a>
+            </li>
+          </ul>
     </section>
 
     <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages-item">
-            <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="advantages-item">
-            <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
-      </div>
+      <h2 class="advantages__title">Как это работает</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--leaf">
+          <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="advantages__item advantages__item--boil">
+          <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="advantages__item advantages__item--eat">
+          <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="advantages__item advantages__item--clock">
+          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
+      </ul>
     </section>
 
     <section class="description">
@@ -114,28 +105,37 @@
     <div class="footer__wrapper">
       <h2 class="footer__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div class="footer__map"><a class="map__spb" href="#" aria-label="Карта СПб"></a>
-      </div>
-      <div class="footer__elements"><a class="footer-logo" href="#" aria-label="Логотип Cat Energy">
-        </a>
-        <ul class="social-links">
-          <li class="social-links__item">
-            <a class="social-link social-link--vk" href="#" aria-label="Переход во вконтакте">
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-link social-link-youtube" href="#" aria-label="Переход в youtube">
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-link social-link-telegram" href="#" aria-label="Переход в телеграм">
-            </a>
-          </li>
-        </ul><a class="footer-link" href="#">
-          <span>HTML Academy</span>
-        </a>
-      </div>
     </div>
+    <div class="footer__map"><a class="map__spb" href="#" aria-label="Карта СПб"><img src="../../images/location.png" alt="Карта с локацией местоположения" width="320px" height="362px"></a>
+    </div>
+
+    <div class="footer__elements">
+
+      <a class="footer__logo" href="#">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./images/logo-mobile-text.svg">
+          <img src="./images/logo-mobile-text.svg" alt="Логотип Кэт Энерджи" width="128px" height="24px">
+        </picture>
+      </a>
+
+      <ul class="social__links">
+        <li class="social__item">
+          <a class="social__links social__links--vk" href="#" aria-label="Переход во вконтакте">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__links social__links--youtube" href="#" aria-label="Переход в youtube">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__links social__links--telegram" href="#" aria-label="Переход в телеграм">
+          </a>
+        </li>
+      </ul><a class="footer__link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+
   </footer>
 </body>
 
