@@ -10,13 +10,13 @@
   left: 21px;
 }
 
-@media (min-resolution: 2dppx) {
-  background-image: url("../img/logo-mobile-text@2x.svg");
-  background-size: 1338px auto;
-}
+// @media (min-resolution: 2dppx) {
+//   background-image: url("../img/logo-mobile-text@2x.svg");
+//   background-size: 1338px auto;
+// }
 
-@media (min-width: $desktop-width) {
-  height: __px;
-  background-position: 50% 0;
-  background-size: cover;
-}
+// @media (min-width: $desktop-width) {
+//   height: __px;
+//   background-position: 50% 0;
+//   background-size: cover;
+// }
