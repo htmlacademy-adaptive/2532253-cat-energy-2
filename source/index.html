@@ -104,7 +104,12 @@
         <div class="slider__container">
 
           <div class="slides slide1">
-            <img src="./images/cat-fat-photo-mobile.png" alt="Толстенький котик">
+            <picture>
+
+              <source media="(min-width: 1200px)" width="560" height="512" type="image/png" srcset="./images/cat-fat-photo-desktop@1x.png 1x, ./images/cat-fat-photo-desktop@2 2x">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/cat-fat-photo-tablet@1x.png 1x, ./images/cat-fat-photo-tablet@2x 2x">
+              <img src="./images/cat-fat-photo-mobile.png" srcset="./images/cat-fat-photo-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик">
+            </picture>
           </div>
 
           <div class="slides slide2">
