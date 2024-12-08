@@ -1,0 +1,25 @@
+.invite {
+  margin: 0 20px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invite__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 140px;
+}
+
+.invite__text {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #444444;
+  width: 140px;
+}
