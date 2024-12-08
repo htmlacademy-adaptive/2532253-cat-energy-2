@@ -6,6 +6,10 @@
   <title>Кокой-то Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -99,28 +103,28 @@
       </div>
 
       <div class="slider">
-        <input type="radio" name="point" id="slide1" checked>
-        <input type="radio" name="point" id="slide2">
         <div class="slider__container">
+          <ul class="slider__list">
+            <li class="slider__screen slider__screen--before">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/before-tablet.png, ./images/before-tablet@2x.png 2x">
+                <img src="./images/before-mobile.png" srcset="./images/before-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик">
+              </picture>
+            </li>
 
-          <div class="slides slide1">
-            <picture>
-
-              <source media="(min-width: 1200px)" width="560" height="512" type="image/png" srcset="./images/cat-fat-photo-desktop@1x.png 1x, ./images/cat-fat-photo-desktop@2 2x">
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/cat-fat-photo-tablet@1x.png 1x, ./images/cat-fat-photo-tablet@2x 2x">
-              <img src="./images/cat-fat-photo-mobile.png" srcset="./images/cat-fat-photo-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик">
-            </picture>
-          </div>
-
-          <div class="slides slide2">
-            <img src="./images/cat-skinny-photo-mobile.png" alt="Худенький котик">
-          </div>
-
-          <div class="controls">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-          </div>
+            <li class="slider__screen slider__screen--after">
+              <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/after-tablet.png, ./images/after-tablet@2x.png 2x">
+                <img src="./images/after-mobile.png" srcset="./images/after-mobile@2x.png 2x" width="280" height="256" alt="Худенький котик">
+              </picture>
+            </li>
+          </ul>
+          <button class="slider__control" type="button">
+            <span class="visually-hidden">Показывает разницу</span>
+          </button>
         </div>
+
+      </div>
       </div>
     </section>
 

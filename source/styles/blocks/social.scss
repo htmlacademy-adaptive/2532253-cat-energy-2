@@ -4,9 +4,10 @@
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  max-width: 132px;
 }
 
 .social__link {
@@ -20,14 +21,42 @@
 
 }
 
+
 .social__link--vk {
   mask: url("../../icons/vkontakte.svg");
+}
+
+.social__link--vk:hover {
+  background-color: #68b738;
+}
+
+.social__link--vk:active {
+  background-image: #68b738;
+  opacity: 30%;
 }
 
 .social__link--youtube {
   mask: url("../../icons/youtube.svg");
 }
 
+.social__link--youtube:hover {
+  background-color: #68b738;
+}
+
+.social__link--youtube:active {
+  background-image: #68b738;
+  opacity: 30%;
+}
+
 .social__link--telegram {
   mask: url("../../icons/telegram.svg");
+}
+
+.social__link--telegram:hover {
+  background-color: #68b738;
+}
+
+.social__link--telegram:active {
+  background-image: #68b738;
+  opacity: 30%;
 }
