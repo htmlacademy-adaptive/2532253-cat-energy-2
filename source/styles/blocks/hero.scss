@@ -21,7 +21,6 @@
   }
 }
 
-
 .hero__block {
   background: #424147 url("../../images/index-background-desktop.jpg") no-repeat top center;
   background-size: auto 100%;
@@ -41,7 +40,6 @@
     opacity: 0.85;
   }
 }
-
 
 .hero__title {
   font-family: $oswald;
@@ -83,3 +81,130 @@
   padding: 11px 5px 9px;
 }
 
+@media (min-width: $tablet) {
+  .hero {
+    position: relative;
+    width: 709px;
+    margin: 0 auto;
+    color: #000000;
+    box-sizing: border-box;
+    padding-left: 91px;
+    padding-top: 56px;
+    padding-bottom: 528px;
+
+    &::before {
+      content: "";
+      width: 709px;
+      height: 609px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      background: url("../../images/index-can-tablet.png") no-repeat 0 0;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../images/index-can-tablet@2x.png") no-repeat 0 0;
+      }
+    }
+  }
+
+  .hero__wrapper {
+    padding: 0;
+    margin: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .hero__block {
+    background: none;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .hero__title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 0 41px;
+    width: 450px;
+  }
+
+  .hero__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    width: 450px;
+    margin: 0 0 49px;
+  }
+
+  .hero__link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    width: 244px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15px 5px 14px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hero__wrapper {
+    position: relative;
+  }
+
+  .hero {
+    margin: 0 0 82px 110px;
+    padding: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 552px;
+      height: 499px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .hero__title {
+    margin: 0;
+    padding: 90px 80px 40px 0;
+  }
+
+  .hero__text {
+    margin: 0 0 49px;
+  }
+
+
+  .hero__block {
+    background: url("../../images/index-background-desktop.jpg") no-repeat top right;
+    background-size: auto 100%;
+    position: relative;
+    left: 600px;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 30;
+      top: 0;
+      left: 0;
+      background-color: $green;
+      opacity: 0.85;
+    }
+  }
+}

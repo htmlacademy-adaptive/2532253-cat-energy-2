@@ -20,3 +20,31 @@
   text-align: center;
   padding: 24px 5px 21px;
 }
+
+@media (min-width: $tablet) {
+  .site-list__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .site-list {
+    border: none;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list__link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.64px;
+    text-align: left;
+    color: red;
+  }
+}

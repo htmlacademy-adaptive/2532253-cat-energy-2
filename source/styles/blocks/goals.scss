@@ -41,9 +41,9 @@
 }
 
 .goals__item--slim::after {
+  background-image: url("../../images/cat-slim.svg");
   left: 29px;
   top: 21px;
-  background-image: url("../../images/cat-slim.svg");
   width: 36px;
   height: 50px;
 }
@@ -104,5 +104,80 @@
 
   &:hover::after {
     width: 32px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .goals__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .goals__item {
+    min-width: 708px;
+    margin: 0 30px 30px;
+    padding: 77px 63px 52px 53px;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: $green;
+      position: absolute;
+      top: 100px;
+      left: 484px;
+      z-index: 1;
+    }
+  }
+
+  .goals__item--slim::after {
+    top: 78px;
+    left: 510px;
+    width: 140px;
+    height: 194px;
+  }
+
+  .goals__item--pro::after {
+    width: 268px;
+    height: 112px;
+    top: 150px;
+    left: 450px;
+  }
+
+  .goals__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+  }
+
+  .goals__text {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 340px;
+    padding-bottom: 48px;
+  }
+
+  .goal__link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.64px;
+    text-align: center;
+  }
+
+  .goal__link::after {
+    top: 10px;
   }
 }

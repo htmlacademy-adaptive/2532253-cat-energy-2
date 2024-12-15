@@ -10,8 +10,63 @@
   width: 24px;
   height: 24px;
   background: url("../../images/burger.svg") no-repeat 0 0;
+  display: none;
 }
 
-.main-nav__list {
+.main-nav--closed .main-nav__toggle {
+  display: block;
+}
+
+.main-nav--closed .main-nav__list {
   display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  display: block;
+  background: url("../../images/nav-cross.svg") no-repeat 0 0;
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    margin-left: auto;
+    max-width: 600px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: flex;
+    position: static;
+  }
+}
+
+@media (min-width: $desktop) {
+
 }

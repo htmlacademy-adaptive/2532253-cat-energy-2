@@ -1,11 +1,11 @@
 
 .social {
-  margin: 20px;
+  margin: 20px auto;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
   max-width: 132px;
 }
@@ -27,11 +27,11 @@
 }
 
 .social__link--vk:hover {
-  background-color: #68b738;
+  background-color: $green;
 }
 
 .social__link--vk:active {
-  background-image: #68b738;
+  background-image: $green;
   opacity: 30%;
 }
 
@@ -40,11 +40,11 @@
 }
 
 .social__link--youtube:hover {
-  background-color: #68b738;
+  background-color: $green;
 }
 
 .social__link--youtube:active {
-  background-image: #68b738;
+  background-image: $green;
   opacity: 30%;
 }
 
@@ -53,10 +53,10 @@
 }
 
 .social__link--telegram:hover {
-  background-color: #68b738;
+  background-color: $green;
 }
 
 .social__link--telegram:active {
-  background-image: #68b738;
+  background-image: $green;
   opacity: 30%;
 }
