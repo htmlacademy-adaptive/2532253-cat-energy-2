@@ -60,3 +60,9 @@
   background-image: $green;
   opacity: 30%;
 }
+
+@media (min-width: $desktop) {
+  .social {
+    margin: 0;
+  }
+}

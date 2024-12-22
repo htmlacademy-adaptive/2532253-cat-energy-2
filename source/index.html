@@ -13,11 +13,12 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="">
+        <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
         <img src="./images/logo-mobile.svg" alt="Логотип кокой">
       </picture>
     </a>
@@ -25,7 +26,7 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list page__nav">
         <li class="site-list__item">
           <a class="site-list__link" href="#">Главная</a>
         </li>
@@ -39,15 +40,17 @@
     </nav>
   </header>
 
-  <main class="main-container">
+  <main class="main">
     <section class="hero">
-      <div class="hero__wrapper">
-        <div class="hero__block">
-          <h1 class="hero__title">Функциональное питание для котов</h1>
-          <p class="hero__text">Занялся собой? Займись котом!</p>
+      <div class="hero__container">
+        <div class="hero__wrapper">
+          <div class="hero__block">
+            <h1 class="hero__title">Функциональное питание для котов</h1>
+            <p class="hero__text">Занялся собой? Займись котом!</p>
+          </div>
         </div>
+        <a class="link hero__link" href="#">Подобрать программу</a>
       </div>
-      <a class="link hero__link" href="#">Подобрать программу</a>
     </section>
 
     <section class="goals">
@@ -56,7 +59,7 @@
         <li class="goals__item goals__item--slim">
           <h3 class="goals__title">Похудение</h3>
           <p class="goals__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="link goal__link" href="#">Каталог slim</a>
+          <a class="link goal__link" href="#">Каталог slimКаталог slimКаталог slimКаталог slimКаталог slim</a>
         </li>
         <li class="goals__item goals__item--pro">
           <h3 class="goals__title">Набор массы</h3>
@@ -89,20 +92,23 @@
     </section>
 
     <section class="description">
+
+      <h2 class="description__title">Живой пример</h2>
       <div class="description__wrapper">
-        <h2 class="description__title">Живой пример</h2>
         <p class="description__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class="description__results">
-          <li class="description__result result">
-            <span class="result__title">5 кг</span>
-            <span class="result__text">снижение веса</span>
-          </li>
-          <li class="description__result result">
-            <span class="result__title">60 дней</span>
-            <span class="result__text">затрачено времени</span>
-          </li>
-        </ul>
-        <p class="description__cost">Затраты на питание: <span>15000 руб.</span>
+        <div class="description__container">
+          <ul class="description__results">
+            <li class="description__result result">
+              <span class="result__title">5 кг</span>
+              <span class="result__text">снижение веса</span>
+            </li>
+            <li class="description__result result">
+              <span class="result__title">60 дней</span>
+              <span class="result__text">затрачено времени</span>
+            </li>
+          </ul>
+          <p class="description__cost">Затраты на питание: <span class="description__sum">15000 руб.</span>
+        </div>
         </p>
       </div>
 
@@ -139,7 +145,7 @@
     <section class="contacts">
       <div class="contacts__invite invite">
         <h2 class="invite__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="invite__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="invite__text">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
       </div>
       <div class="contacts__map map">
         <div class="map__google"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672858!2d30.32047247697675!3d59.938716474915154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2srs!4v1732124999449!5m2!1sru!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>

@@ -3,10 +3,6 @@
   padding: 20px;
 }
 
-.description__wrapper {
-
-}
-
 .description__title {
   margin: 0;
   padding: 0;
@@ -76,7 +72,14 @@
     color: #444444;
     margin: 0;
     padding: 0;
+    min-width: 708px;
     margin-bottom: 55px;
+  }
+
+  .description__container {
+    min-width: 708px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .description__results {
@@ -94,8 +97,69 @@
     font-weight: 400;
     line-height: 20px;
     text-align: right;
-    margin: -45px 600px;
     padding: 0;
     width: 175px;
   }
 }
+
+@media (min-width: $desktop) {
+  .description {
+    background-color: #f2f2f2;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 130px;
+      background-color: #ffffff;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+    }
+  }
+
+
+  .description__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+  }
+
+  .description__title {
+    margin: 0 110px 71px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .description__text {
+    width: 436px;
+    padding: 70px 250px 0 0;
+    box-sizing: border-box;
+  }
+
+  .description__container {
+    display: block;
+  }
+
+  .description__results {
+    position: relative;
+  }
+
+  .result__text {
+    background-color: blueviolet;
+  }
+
+  .description__cost {
+    text-align: left;
+    padding: 60px 0;
+    width: 600px;
+  }
+
+  .description__sum {
+    padding: 120px;
+  }
+}
+

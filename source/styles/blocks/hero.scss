@@ -22,7 +22,7 @@
 }
 
 .hero__block {
-  background: #424147 url("../../images/index-background-desktop.jpg") no-repeat top center;
+  background: #424147 url("../../images/index-background-mobile.jpg") no-repeat top center;
   background-size: auto 100%;
   padding-top: 27px;
   padding-bottom: 163px;
@@ -159,52 +159,88 @@
 }
 
 @media (min-width: $desktop) {
-  .hero__wrapper {
+  .hero {
+    margin: 0 0 81px;
+    padding: 0 0 57px;
     position: relative;
+    width: 100%;
+
+    &::before {
+      width: 50%;
+      height: calc(100% + 139px);
+      background: $green;
+      transform: translate(0);
+      bottom: unset;
+      top: -139px;
+      z-index: 5;
+      opacity: 85%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: calc(100% + 139px);
+      background: #4f4f53 url("../../images/index-background-desktop 1.jpg") no-repeat right top;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../images/index-background-desktop 1@2x.jpg") no-repeat 0 0;
+      }
+      transform: translate(0);
+      bottom: unset;
+      top: -139px;
+      left: 50%;
+      z-index: 1;
+      background-size: auto 100%;
+    }
   }
 
-  .hero {
-    margin: 0 0 82px 110px;
-    padding: 0;
+  .hero__container {
+    width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-right: 650px;
+    padding-left: 80px;
+    padding-top: 87px;
+    min-height: 499px;
     position: relative;
+    z-index: 10;
 
     &::before {
       content: "";
       width: 552px;
       height: 499px;
+      background: url("../../images/index-can-desktop.png") no-repeat 0 0;
+
+      @media (min-resolution: 2dppx) {
+        background:
+          url("../../images/index-can-desktop@2x.png")
+          no-repeat 0 0;
+      }
       position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%);
+      left: 59%;
+      top: 5px;
+      margin-left: -273px;
     }
   }
 
+  .hero__wrapper {
+    position: relative;
+  }
+
   .hero__title {
-    margin: 0;
-    padding: 90px 80px 40px 0;
+    margin: 0 0 39px;
+    padding: 0;
   }
 
   .hero__text {
-    margin: 0 0 49px;
+    margin: 0 0 52px;
   }
 
 
   .hero__block {
-    background: url("../../images/index-background-desktop.jpg") no-repeat top right;
-    background-size: auto 100%;
-    position: relative;
-    left: 600px;
-
     &::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 30;
-      top: 0;
-      left: 0;
-      background-color: $green;
-      opacity: 0.85;
+
     }
   }
 }

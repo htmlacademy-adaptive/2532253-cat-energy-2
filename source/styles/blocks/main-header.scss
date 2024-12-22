@@ -25,9 +25,18 @@
 }
 
 @media (min-width: $desktop) {
+  .main-header {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 73px 0 20px;
+    min-height: 45px;
+  }
+
   .main-header__logo {
     width: 202px;
     height: 59px;
+    top: 55px;
+    left: 0;
   }
 }
 

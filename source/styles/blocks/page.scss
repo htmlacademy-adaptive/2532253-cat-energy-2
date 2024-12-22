@@ -1,0 +1,31 @@
+@media (min-width: $desktop) {
+  .page__body--index {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 600px;
+      background-color: $green;
+      z-index: 3;
+      opacity: 85%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 600px;
+      background-color: #48474b;
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      top: 0;
+    }
+  }
+.page__body--index .page__nav {
+  color: #ffffff;
+}
+}
