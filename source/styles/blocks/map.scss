@@ -31,7 +31,10 @@
 
 @media (min-width: $desktop) {
   .map {
-    position: relative;
-    height: 400px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 }

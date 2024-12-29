@@ -22,7 +22,7 @@
   text-align: center;
   color: #444444;
   display: block;
-  margin: -8px 17px;
+  margin: -8px 17px 0;
   padding: 0 10px;
   background-color: #eaeaea;
 }
@@ -43,5 +43,11 @@
     text-align: center;
     color: #444444;
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop) {
+  .result__text {
+    background-color: #f2f2f2;
   }
 }

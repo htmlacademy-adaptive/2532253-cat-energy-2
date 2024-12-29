@@ -50,7 +50,7 @@
   height: 34px;
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $tablet) {
   .footer__elements {
     display: flex;
     flex-wrap: wrap;
@@ -60,16 +60,31 @@
 
   .footer__container {
     border-bottom: unset;
-    padding: 0;
+    padding: 20px;
     margin: 0;
   }
 
   .link__developer {
     border-top: unset;
-    padding: 0;
+    padding: 20px;
   }
 
   .footer__link {
     padding-right: 23px;
+  }
+
+  .footer__pin {
+    // что же ты хочешь
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer__container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .link__developer {
+    padding: 0;
   }
 }

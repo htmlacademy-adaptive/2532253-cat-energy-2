@@ -59,12 +59,12 @@
         <li class="goals__item goals__item--slim">
           <h3 class="goals__title">Похудение</h3>
           <p class="goals__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="link goal__link" href="#">Каталог slimКаталог slimКаталог slimКаталог slimКаталог slim</a>
+          <a class="link goals__link" href="#">Каталог slim</a>
         </li>
         <li class="goals__item goals__item--pro">
           <h3 class="goals__title">Набор массы</h3>
           <p class="goals__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="link goal__link" href="#">Каталог pro</a>
+          <a class="link goals__link" href="#">Каталог pro</a>
         </li>
       </ul>
     </section>
@@ -93,7 +93,9 @@
 
     <section class="description">
 
-      <h2 class="description__title">Живой пример</h2>
+      <h2 class="description__title">
+        <span class="description__title-text">Живой пример</span>
+      </h2>
       <div class="description__wrapper">
         <p class="description__text">Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="description__container">
@@ -107,35 +109,34 @@
               <span class="result__text">затрачено времени</span>
             </li>
           </ul>
-          <p class="description__cost">Затраты на питание: <span class="description__sum">15000 руб.</span>
+          <p class="description__cost">Затраты на питание: <span class="description__sum">15000 руб.</span></p>
         </div>
-        </p>
+        <div class="slider">
+          <div class="slider__container">
+            <ul class="slider__list">
+              <li class="slider__screen slider__screen--before">
+                <picture>
+                  <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/before-tablet.png, ./images/before-tablet@2x.png 2x">
+                  <img src="./images/before-mobile.png" srcset="./images/before-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик">
+                </picture>
+              </li>
+
+              <li class="slider__screen slider__screen--after">
+                <picture>
+                  <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/after-tablet.png, ./images/after-tablet@2x.png 2x">
+                  <img src="./images/after-mobile.png" srcset="./images/after-mobile@2x.png 2x" width="280" height="256" alt="Худенький котик">
+                </picture>
+              </li>
+            </ul>
+            <button class="slider__control" type="button">
+              <span class="visually-hidden">Показывает разницу</span>
+              <span class="slider__control-bg"></span>
+            </button>
+          </div>
+
+        </div>
       </div>
 
-      <div class="slider">
-        <div class="slider__container">
-          <ul class="slider__list">
-            <li class="slider__screen slider__screen--before">
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/before-tablet.png, ./images/before-tablet@2x.png 2x">
-                <img src="./images/before-mobile.png" srcset="./images/before-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик">
-              </picture>
-            </li>
-
-            <li class="slider__screen slider__screen--after">
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/after-tablet.png, ./images/after-tablet@2x.png 2x">
-                <img src="./images/after-mobile.png" srcset="./images/after-mobile@2x.png 2x" width="280" height="256" alt="Худенький котик">
-              </picture>
-            </li>
-          </ul>
-          <button class="slider__control" type="button">
-            <span class="visually-hidden">Показывает разницу</span>
-            <span class="slider__control-bg"></span>
-          </button>
-        </div>
-
-      </div>
       </div>
     </section>
 

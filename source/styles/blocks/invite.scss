@@ -51,14 +51,14 @@
 @media (min-width: $desktop) {
   .invite {
     width: 565px;
-    height: 199px;
-    margin: 95px 0 -300px 110px;
+    margin: 95px 0 0 -610px;
     padding: 0;
     z-index: 30;
     position: relative;
     background-color: #ffffff;
     justify-content: center;
     gap: 80px;
+    left: 50%;
   }
 
   .invite__title {
