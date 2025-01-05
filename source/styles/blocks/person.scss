@@ -1,0 +1,10 @@
+.person {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.person__item:not(:last-child) {
+  margin-bottom: 14px;
+}

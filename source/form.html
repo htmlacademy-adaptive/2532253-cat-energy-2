@@ -37,10 +37,35 @@
 
   <main class="main-form">
     <section class="questionnaire">
-      <h1 class="questionnaire__title">Подбор программы</h1>
-      <p class="questionnaire__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="questionnaire__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="questionnaire__fieldset  questionnaire__fieldset--info">
+      <h1 class="questionnaire__title inner-title">
+        <span class="inner-tittle__text">Подбор программы
+        </span>
+      </h1>
+      <p class="questionnaire__text inner-text">
+        <span class="inner-text__text">Заполните анкету и мы подберем программу питания для вашего кота
+        </span>
+      </p>
+      <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="form__group person">
+          <legend class="visually-hidden">Данные питомца</legend>
+          <ul class="form__list person__list">
+            <li class="person__item text__input">
+              <label class="text-input__label" for="name">ИМЯ:*</label>
+              <input class="text-input__input" type="text" id="name" name="name">
+            </li>
+            <li class="person__item text__input">
+              <label class="text-input__label" for="weight">ВЕС (КГ):*</label>
+              <input class="text-input__input" type="text" id="weight" name="weight">
+            </li>
+            <li class="person__item text__input">
+              <label class="text-input__label" for="age">ВОЗРАСТ (ЛЕТ):</label>
+              <input class="text-input__input" type="text" id="age" name="age">
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- <fieldset class="questionnaire__fieldset  questionnaire__fieldset--info">
           <legend class="visually-hidden">Сбор информации о котике</legend>
           <div class="questionnaire__wrapper">
             <ul class="questionnaire__fieldset-list">
@@ -58,7 +83,7 @@
               </li>
             </ul>
           </div>
-        </fieldset>
+        </fieldset> -->
       </form>
     </section>
   </main>
