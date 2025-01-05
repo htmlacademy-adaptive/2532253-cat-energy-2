@@ -1,11 +1,12 @@
+.contacts {
+  background-color: #f2f2f2;
+}
+
 @media (min-width: $desktop) {
   .contacts {
     position: relative;
     padding-top: 95px;
     padding-bottom: 106px;
+    background-color: #ffffff;
   }
-
-  .contacts__invite {}
-
-  .contacts__map {}
 }

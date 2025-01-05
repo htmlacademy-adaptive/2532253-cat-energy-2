@@ -1,4 +1,4 @@
-.add-product__present {
+.present {
   width: 280px;
   height: 290px;
   margin: 0 auto;
@@ -56,4 +56,38 @@
   text-align: center;
   color: #ffffff;
   top: 186px;
+}
+
+@media (min-width: $tablet) {
+  .present {
+    margin: 0 auto;
+    min-width: 707px;
+    height: 200px;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      background: url("../../images/catbox-tablet.jpg") top / auto 100% no-repeat;
+    }
+
+    &::after {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  .present__container {
+    position: relative;
+
+    &::before {
+      top: 60px;
+    }
+  }
+
+  .present__text {
+    text-align: left;
+    top: 70px;
+    left: 60%;
+    margin: 0;
+  }
 }

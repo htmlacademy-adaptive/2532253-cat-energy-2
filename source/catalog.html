@@ -17,7 +17,7 @@
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
+        <source media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="svg">
         <img src="./images/logo-mobile.svg" alt="Логотип кокой">
       </picture>
     </a>
@@ -41,159 +41,177 @@
 
   <main class="main-catalog">
     <div class="product">
-      <h1 class="product__title">Каталог продукции</h1>
+      <h1 class="product__title inner-title"><span class="inner-tittle__text">Каталог продукции</span></h1>
 
-      <ul class="product-card">
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+      <ul class="product__about">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__specification">
               <picture>
-                <source media="(min-width: 768px)" srcset="./images/chicken500@2x.png" type="png">
-                <img class="product-image" alt="Корм с курой" src="../../images/chicken500.png" width="140" height="107">
+                <source media="(min-width: 1440px)" srcset="./images/chicken500-desktop.png, ./images/chicken500-desktop@2x.png 2x" type="png" width="169" height="210">
+
+                <source media="(min-width: 768px)" srcset="./images/chicken500-tablet.png, ./images/chicken500-tablet@2x.png 2x" type="png" width="200" height="210">
+
+                <img class="product__image" alt="Корм с курой" src="./images/chicken500.png" srcset="./images/chicken500@2x.png 2x" type="png" width="140" height="107">
               </picture>
-              <div class="product__about">
+
+              <div class="product-card">
                 <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
-                <div class="product__elements">
+                <div class="product-card__elements">
                   <p class="product-card__text">Масса
-                    <span>500 г </span>
+                    <span>500 г</span>
                   </p>
                   <p class="product-card__text">Вкус <span>Курица</span></p>
-                  <p class="product-card__text">Цена<span></span> 700 ₽</span></p>
+                  <p class="product-card__text">Цена<span>700 ₽</span></p>
                 </div>
               </div>
+
             </div>
-            <a class="link link--product" href="#">Заказать</a>
+            <a class="product__link" href="#">Заказать</a>
           </div>
         </li>
 
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__specification">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/chicken1000@2x.png" type="png">
-                <img class="product-image" alt="Корм с курой" src="../../images/chicken1000.png" width="140" height="107">
+                <img class="product__image" alt="Корм с курой" src="../../images/chicken1000.png" width="140" height="107">
               </picture>
-              <div class="product__about">
+
+              <div class="product-card">
                 <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
-                <div class="product__elements">
+                <div class="product-card__elements">
                   <p class="product-card__text">Масса <span>1000 г</span></p>
                   <p class="product-card__text">Вкус <span>Курица</span></p>
                   <p class="product-card__text">Цена <span>1000 ₽</span></p>
                 </div>
               </div>
+
             </div>
-            <a class="link link--product" href="#">Заказать</a>
+            <a class="product__link" href="#">Заказать</a>
           </div>
         </li>
 
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__specification">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/fish500@2x.png" type="png">
-                <img class="product-image" alt="Корм с рыбой" src="../../images/fish500.png" width="140" height="107">
+                <img class="product__image" alt="Корм с рыбой" src="../../images/fish500.png" width="140" height="107">
               </picture>
-              <div class="product__about">
+
+              <div class="product-card">
                 <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
-                <div class="product__elements">
+                <div class="product-card__elements">
                   <p class="product-card__text">Масса <span>500 г</span> </p>
                   <p class="product-card__text">Вкус <span>Рыба</span> </p>
                   <p class="product-card__text">Цена <span>700 ₽</span> </p>
                 </div>
               </div>
+
             </div>
-            <a class="link link--product" href="#">Заказать</a>
+            <a class="product__link" href="#">Заказать</a>
           </div>
         </li>
 
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__specification">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/fish1000@2x.png" type="png">
-                <img class="product-image" alt="Корм с рыбой" src="../../images/fish1000.png" width="140" height="107">
+                <img class="product__image" alt="Корм с рыбой" src="../../images/fish1000.png" width="140" height="107">
               </picture>
-              <div class="product__about">
+              <div class="product-card">
                 <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
-                <div class="product__elements">
+                <div class="product-card__elements">
                   <p class="product-card__text">Масса <span>1000 г</span></p>
                   <p class="product-card__text">Вкус <span>Рыба</span></p>
                   <p class="product-card__text">Цена <span>1000 ₽</span></p>
                 </div>
               </div>
+
             </div>
-            <a class="link link--product" href="#">Заказать</a>
+            <a class="product__link" href="#">Заказать</a>
           </div>
         </li>
 
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__specification">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/buckwheat500@2x.png" type="png">
-                <img class="product-image" alt="Корм с гречей" src="../../images/buckwheat500.png" width="140" height="107">
+                <img class="product__image" alt="Корм с гречей" src="../../images/buckwheat500.png" width="140" height="107">
               </picture>
-              <div class="product__about">
+
+              <div class="product-card">
                 <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
-                <div class="product__elements">
+                <div class="product-card__elements">
                   <p class="product-card__text">Масса <span>500 г</span></p>
                   <p class="product-card__text">Вкус <span>Гречка</span></p>
                   <p class="product-card__text">Цена <span>700 ₽</span></p>
                 </div>
               </div>
+
             </div>
-            <a class="link link--product" href="#">Заказать</a>
+            <a class="product__link" href="#">Заказать</a>
           </div>
         </li>
 
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__specification">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/buckwheat1000@2x.png" type="png">
-                <img class="product-image" alt="Корм с гречей" src="../../images/buckwheat1000.png" width="140" height="107">
+                <img class="product__image" alt="Корм с гречей" src="../../images/buckwheat1000.png" width="140" height="107">
               </picture>
-              <div class="product__about">
+
+              <div class="product-card">
                 <h2 class="product-card__title">Cat Energy SLIM 1000 г</h2>
-                <div class="product__elements">
+                <div class="product-card__elements">
                   <p class="product-card__text">Масса <span>1000 г</span></p>
                   <p class="product-card__text">Вкус <span>Гречка</span></p>
                   <p class="product-card__text">Цена <span>1000 ₽</span></p>
                 </div>
               </div>
+
             </div>
-            <a class="link link--product" href="#">Заказать</a>
+            <a class="product__link" href="#">Заказать</a>
           </div>
         </li>
 
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__specification">
               <picture>
                 <source media="(min-width: 768px)" srcset="./images/rice500@2x.png" type="png">
-                <img class="product-image" alt="Корм с рисом" src="../../images/rice500.png" width="140" height="107">
+                <img class="product__image" alt="Корм с рисом" src="../../images/rice500.png" width="140" height="107">
               </picture>
-              <div class="product__about">
+
+              <div class="product-card">
                 <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
-                <div class="product__elements">
+                <div class="product-card__elements">
                   <p class="product-card__text">Масса <span>500 г</span></p>
                   <p class="product-card__text">Вкус <span>Рис</span></p>
                   <p class="product-card__text">Цена <span>700 ₽</span></p>
                 </div>
               </div>
+
             </div>
-            <a class="link link--product" href="#">Заказать</a>
+            <a class="product__link" href="#">Заказать</a>
           </div>
         </li>
 
-        <li class="product-card catalog__card">
-          <div class="product-card content__card">
+        <li class="product__catalog">
+          <div class="product__content">
             <div class="product__all">
-              <h2 class="product-card__title title__all">Показать еще 100500 товаров</h2>
-              <p class="product-card__text text__all">На самом деле вкусов гораздо больше!</p>
-            </div>
-            <a class="link link--product-all" href="#">Показать все</a>
 
+              <div class="product-card">
+                <h2 class="product-card__title product-card__title-all">Показать еще 100500 товаров</h2>
+                <p class="product-card__text product-card__text-all">На самом деле вкусов гораздо больше!</p>
+              </div>
+              <a class="product__link product-card__link-all" href="#">Показать все</a>
+            </div>
           </div>
         </li>
 
@@ -206,35 +224,42 @@
       <div class="add-product__container">
         <ul class="add-product__list">
           <li class="add-product__item">
-            <h3 class="add-product__tittle">Сахарозаменитель</h3>
-            <p class="add-product__text">1 упаковка (100г) <span>200₽</span></p>
-            <a class="link link--product" href="#">Заказать</a>
+            <div class="add-product__wrapper">
+              <h3 class="add-product__tittle">Сахарозаменитель</h3>
+              <p class="add-product__text">1 упаковка (100г) <span>200₽</span></p>
+            </div>
+            <a class="add-product__link product__link" href="#">Заказать</a>
           </li>
           <li class="add-product__item">
-            <h3 class="add-product__tittle">Питьевая вода</h3>
-            <p class="add-product__text">5 литров <span>50₽</span></p>
-            <a class="link link--product" href="#">Заказать</a>
+            <div class="add-product__wrapper">
+              <h3 class="add-product__tittle">Питьевая вода</h3>
+              <p class="add-product__text">5 литров <span>50₽</span></p>
+            </div>
+            <a class="add-product__link product__link" href="#">Заказать</a>
           </li>
           <li class="add-product__item">
-            <h3 class="add-product__tittle">Молоко</h3>
-            <p class="add-product__text">1 литр <span>100₽</span></p>
-            <a class="link link--product" href="#">Заказать</a>
+            <div class="add-product__wrapper">
+              <h3 class="add-product__tittle">Молоко</h3>
+              <p class="add-product__text">1 литр <span>100₽</span></p>
+            </div>
+            <a class="add-product__link product__link" href="#">Заказать</a>
           </li>
           <li class="add-product__item">
-            <h3 class="add-product__tittle">Витамины</h3>
-            <p class="add-product__text">1 упаковка <span>300₽</span></p>
-            <a class="link link--product" href="#">Заказать</a>
+            <div class="add-product__wrapper">
+              <h3 class="add-product__tittle">Витамины</h3>
+              <p class="add-product__text">1 упаковка <span>300₽</span></p>
+            </div>
+            <a class="add-product__link product__link" href="#">Заказать</a>
           </li>
         </ul>
       </div>
-
-      <div class="add-product__present">
-        <div class="present__container">
-          <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
-        </div>
-      </div>
-
     </section>
+
+    <div class="present">
+      <div class="present__container">
+        <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
+    </div>
 
     <section class="subscribe">
       <h1 class="subscribe__title">Акции и новинки</h1>
@@ -242,10 +267,10 @@
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
 
         <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
-          <label>
+          <label class="subscribe__label">
             <input class="subscribe__input" type="email" name="email" value="kuklachev@gmail.com" placeholder="enter your e-mail" required="">
           </label>
-          <button class="button subscribe__button" type="submit">Подписаться</button>
+          <button class="subscribe__button" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
@@ -271,7 +296,7 @@
       <div class="footer__container">
         <a class="footer__logo" href="#">
           <picture>
-            <source media="(min-width: 768px)" srcset="./images/logo-mobile-text.svg">
+            <source media="(min-width: 768px)" srcset="./images/logo-mobile-text.svg" type="svg">
             <img src="./images/logo-mobile-text.svg" alt="Логотип Кэт Энерджи" width="128px" height="24px">
           </picture>
         </a>
