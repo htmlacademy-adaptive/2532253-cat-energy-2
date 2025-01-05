@@ -1,5 +1,11 @@
-.contacts {}
+@media (min-width: $desktop) {
+  .contacts {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 106px;
+  }
 
-.contacts__invite {}
+  .contacts__invite {}
 
-.contacts__map {}
+  .contacts__map {}
+}

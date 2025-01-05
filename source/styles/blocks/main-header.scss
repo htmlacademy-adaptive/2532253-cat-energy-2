@@ -1,6 +1,7 @@
 .main-header {
   padding-top: 65px;
   position: relative;
+  z-index: 30;
   background: url("../../images/logo-mobile-text.svg") no-repeat center 23px;
 }
 
@@ -8,5 +9,34 @@
   position: absolute;
   top: 13px;
   left: 21px;
+  z-index: 10;
+}
+
+@media (min-width: $tablet) {
+  .main-header {
+    padding: 38px 34px 22px 31px;
+    background: none;
+  }
+
+  .main-header__logo {
+    top: 25px;
+    left: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-header {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 73px 0 20px;
+    min-height: 45px;
+  }
+
+  .main-header__logo {
+    width: 202px;
+    height: 59px;
+    top: 55px;
+    left: 0;
+  }
 }
 

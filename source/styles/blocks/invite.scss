@@ -23,3 +23,50 @@
   color: #444444;
   width: 140px;
 }
+
+@media (min-width: $tablet) {
+  .invite {
+    padding: 0;
+    margin: 60px 70px;
+  }
+
+  .invite__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .invite__text {
+    font-family: $lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    color: #444444;
+    width: 157px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .invite {
+    width: 565px;
+    margin: 95px 0 0 -610px;
+    padding: 0;
+    z-index: 30;
+    position: relative;
+    background-color: #ffffff;
+    justify-content: center;
+    gap: 80px;
+    left: 50%;
+  }
+
+  .invite__title {
+    padding: 40px;
+  }
+
+  .invite__text {
+    text-align: left;
+    padding: 40px;
+  }
+}

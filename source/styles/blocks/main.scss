@@ -1,0 +1,11 @@
+.main-catalog {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop) {
+  .main {
+    position: relative;
+    z-index: 10;
+  }
+}
