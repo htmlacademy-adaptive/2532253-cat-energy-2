@@ -1,0 +1,37 @@
+.inner-text {
+  margin: 0 20px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.inner-text__text {
+  width: 260px;
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .inner-text {
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .inner-text__text {
+    width: 350px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .inner-text {
+    margin: 0 auto;
+    width: 1220px;
+  }
+
+  .inner-text__text {
+    width: 350px;
+  }
+}

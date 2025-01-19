@@ -1,7 +1,3 @@
-.footer {
-
-}
-
 .footer__wrapper {
   display: grid;
   grid-template-columns: 140px 140px;
@@ -30,6 +26,15 @@
   text-align: center;
 }
 
+.footer__logo:hover {
+  opacity: 80%;
+}
+
+.footer__logo:active {
+  opacity: 60%;
+}
+
+
 .link__developer {
   border-top: 1px solid #d9d9d9;
   padding: 20px 20px 0;
@@ -38,24 +43,43 @@
   justify-content: space-between;
 }
 
+
 .footer__link {
   text-decoration: none;
   width: 113px;
   height: 20px;
 }
 
+.footer__link:active {
+  opacity: 30%;
+}
+
 .footer__pin {
-  text-decoration: none;
   width: 27px;
   height: 34px;
+  background-color: #666666;
+  text-decoration: none;
 }
+
+.footer__pin--active {
+  mask: url("../../images/html-academy-pin.svg");
+}
+
+.footer__pin--active:hover {
+  background-color: $green;
+}
+
+.footer__pin--active:active {
+  background-color: $green;
+  opacity: 30%;
+}
+
 
 @media (min-width: $tablet) {
   .footer__elements {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 66px 110px;
   }
 
   .footer__container {
@@ -72,10 +96,6 @@
   .footer__link {
     padding-right: 23px;
   }
-
-  .footer__pin {
-    // что же ты хочешь
-  }
 }
 
 @media (min-width: $desktop) {
@@ -86,5 +106,11 @@
 
   .link__developer {
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer__elements {
+    padding: 66px 110px;
   }
 }

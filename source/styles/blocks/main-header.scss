@@ -5,11 +5,27 @@
   background: url("../../images/logo-mobile-text.svg") no-repeat center 23px;
 }
 
+.main-header:hover {
+  opacity: 80%;
+}
+
+.main-header:active {
+  opacity: 60%;
+}
+
 .main-header__logo {
   position: absolute;
   top: 13px;
   left: 21px;
   z-index: 10;
+}
+
+.main-header__logo:hover {
+  opacity: 80%;
+}
+
+.main-header__logo:active {
+  opacity: 60%;
 }
 
 @media (min-width: $tablet) {

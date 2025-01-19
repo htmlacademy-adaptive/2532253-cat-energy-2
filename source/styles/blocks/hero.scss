@@ -81,6 +81,14 @@
   padding: 11px 5px 9px;
 }
 
+.hero__link:hover {
+  background-color: $green2;
+}
+
+.hero__link:active {
+  background-color: $green2;
+}
+
 @media (min-width: $tablet) {
   .hero {
     position: relative;

@@ -1,59 +1,103 @@
-.add-product__present {
-  width: 280px;
-  height: 290px;
+.present {
   margin: 0 auto;
   position: relative;
 
-  &::before {
-    content: "";
-    width: 280px;
-    height: 290px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    background: url("../../images/catbox-mobile.jpg") no-repeat 0 0;
-  }
-
-  &::after {
-    content: "";
-    width: 280px;
-    height: 290px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: $green;
-    opacity: 85%;
-    z-index: 1;
-  }
+  // &::before {
+  //   content: "";
+  //   width: 280px;
+  //   height: 290px;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 50%;
+  //   transform: translate -50%;
+  //   background: url("../../images/catbox-mobile.jpg") no-repeat 0 0;
+  //   background-size: cover;
+  // }
 }
 
 .present__container {
   position: relative;
+}
+
+.present__text {
+  color: #ffffff;
+  text-align: center;
+  max-width: 161px;
+  margin: 0 auto;
+  padding: 119px 78px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+  opacity: 0.85;
+  background-color: $green;
 
   &::before {
     content: "";
     width: 78px;
     height: 80px;
     position: absolute;
-    top: 50px;
-    left: 100px;
+    left: 120px;
+    top: 40px;
     background-image: url("../../icons/icon_gift.svg");
     z-index: 5;
   }
+
+  // &::after {
+  //   content: "";
+  //   min-width: 280px;
+  //   min-height: 290px;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   transform: translateX(50%);
+  //   background-color: $green;
+  //   opacity: 85%;
+  //   z-index: 1;
+  // }
 }
 
-.present__text {
-  margin: 0 auto;
-  max-width: 161px;
-  position: relative;
-  z-index: 3;
-  font-family: $lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  top: 186px;
+@media (min-width: $tablet) {
+  .present {
+    margin: 0 30px;
+    height: auto;
+    padding-top: 54px;
+    box-sizing: border-box;
+    padding-bottom: 54px;
+    padding-left: 394px;
+    width: 100%;
+
+    // &::before {
+    //   width: 100%;
+    //   height: 100%;
+    //   background: url("../../images/catbox-tablet.jpg") top / auto 100% no-repeat;
+    //   // background-size: cover;
+    //   top: 0;
+    // }
+
+    &::after {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  .present__text {
+    text-align: left;
+    top: 25px;
+    left: 60%;
+    margin: 0;
+
+    &::before {
+      bottom: 36px;
+      left: -370px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .present {
+    min-width: 245px;
+    margin: 0;
+  }
 }

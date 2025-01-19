@@ -30,12 +30,24 @@
     padding: 0;
   }
 
+  .site-list__link:hover {
+    opacity: 60%;
+  }
+
+  .site-list__link:focus {
+    opacity: 60%;
+  }
+
   .site-list {
     border: none;
   }
 
   .site-list__item {
     border: none;
+  }
+
+  .site-list__link--current {
+    border-bottom: 2px solid $green;
   }
 }
 
@@ -46,5 +58,9 @@
     line-height: 29.64px;
     text-align: left;
     color: inherit;
+  }
+
+  .site-list__link--index {
+    border-bottom: 2px solid #ffffff;
   }
 }
