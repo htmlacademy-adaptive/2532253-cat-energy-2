@@ -1,0 +1,155 @@
+.addition__header {
+  position: relative;
+}
+
+.addition__jacket {
+  display: inline-block;
+}
+
+.addition__container {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.addition__list {
+  list-style: none;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.addition__item {
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.addition__tittle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.addition__text {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #444444;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.addition__link {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px 87px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.addition__link:hover {
+  background-color: $green2;
+}
+
+
+@media (min-width: $tablet) {
+  .addition__item {
+    border: 1px solid #cdcdcd;
+    padding: 26px 38px;
+    border-bottom: none;
+  }
+
+  .addition__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .addition__list {
+    padding: 30px;
+  }
+
+  .addition__tittle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .addition__text {
+    gap: 50px;
+    font-family: $lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .addition__header {
+    &::before {
+      top: 25px;
+    }
+  }
+
+  .addition__wrapper-desktop {
+    margin: 0 auto;
+    width: 1220px;
+    display: block;
+  }
+
+  .addition__about {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .addition__container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .addition__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .addition__item {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7px;
+  }
+
+  .addition__wrapper {
+    flex-grow: 1;
+    padding-right: 30px;
+  }
+
+  .addition__text {
+    text-align: left;
+    gap: 180px;
+  }
+}

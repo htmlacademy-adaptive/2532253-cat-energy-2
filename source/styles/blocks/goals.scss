@@ -12,7 +12,7 @@
 .goals__item {
   background-color: #f2f2f2;
   margin-bottom: 20px;
-  padding: 30px 22px 16px;
+  padding: 30px 20px 16px;
   position: relative;
 
   &::before {
@@ -22,8 +22,8 @@
     border-radius: 50%;
     background: $green;
     position: absolute;
-    left: 24px;
-    top: 22px;
+    top: 24px;
+    left: 20px;
     z-index: 1;
   }
 
@@ -42,7 +42,7 @@
 
 .goals__item--slim::after {
   background-image: url("../../images/cat-slim.svg");
-  left: 29px;
+  left: 27px;
   top: 21px;
   width: 36px;
   height: 50px;
@@ -61,7 +61,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  margin: 0 0 29px;
+  margin: 0 0 30px;
   padding: 0 0 0 70px;
   text-transform: uppercase;
 }

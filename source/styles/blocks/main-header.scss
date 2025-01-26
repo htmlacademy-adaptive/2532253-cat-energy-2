@@ -5,18 +5,18 @@
   background: url("../../images/logo-mobile-text.svg") no-repeat center 23px;
 }
 
-.main-header:hover {
-  opacity: 80%;
-}
+// .main-header:hover {
+//   opacity: 80%;
+// }
 
-.main-header:active {
-  opacity: 60%;
-}
+// .main-header:active {
+//   opacity: 60%;
+// }
 
 .main-header__logo {
   position: absolute;
   top: 13px;
-  left: 21px;
+  left: 20px;
   z-index: 10;
 }
 
