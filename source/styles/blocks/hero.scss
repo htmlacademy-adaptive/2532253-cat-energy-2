@@ -103,17 +103,17 @@
     margin: 0 auto;
     color: #000000;
     box-sizing: border-box;
-    padding-left: 100px;
+    padding-left: 90px;
     padding-top: 45px;
-    padding-bottom: 528px;
+    padding-bottom: 526px;
 
     &::before {
       content: "";
       width: 709px;
       height: 609px;
       position: absolute;
-      bottom: 3px;
-      left: 51%;
+      bottom: 0;
+      left: 50%;
       transform: translate(-50%);
       background: url("../../images/index-can-tablet.png") no-repeat 0 0;
 
@@ -215,7 +215,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding-right: 650px;
-    padding-left: 90px;
+    padding-left: 79px;
     padding-top: 86px;
     min-height: 499px;
     position: relative;
@@ -233,9 +233,9 @@
           no-repeat 0 0;
       }
       position: absolute;
-      left: 59%;
+      left: 50%;
       top: 5px;
-      margin-left: -262px;
+      margin-left: -163px;
     }
   }
 

@@ -25,6 +25,10 @@
   width: 140px;
 }
 
+.invite__text span {
+  display: block;
+}
+
 @media (min-width: $tablet) {
   .invite {
     margin: 0 30px;
@@ -57,7 +61,7 @@
 @media (min-width: $desktop) {
   .invite {
     width: 565px;
-    margin: 95px 0 0 -600px;
+    margin: 95px 0 0 -610px;
     padding: 60px 0;
     z-index: 30;
     position: relative;

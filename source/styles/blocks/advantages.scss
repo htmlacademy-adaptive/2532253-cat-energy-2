@@ -101,7 +101,6 @@
 
 @media (min-width: $tablet) {
   .advantages {
-    // margin: 47px 30px 54px;
     border-bottom: 1px solid #e6e6e6;
     width: 100%;
     margin: 0;
@@ -121,7 +120,7 @@
 
 
   .advantages__list {
-    margin-left: -53px;
+    margin-left: -75px;
     display: grid;
     grid-template-columns: 250px 250px;
     column-gap: 136px;
@@ -142,7 +141,7 @@
       background: $green;
       position: absolute;
       left: 0;
-      top: 40px;
+      top: 42px;
     }
   }
 
@@ -174,7 +173,7 @@
     text-align: left;
     color: #444444;
     width: 250px;
-    margin-top: -130px;
+    margin-top: -127px;
   }
 
   .advantages__number {
@@ -197,21 +196,15 @@
   }
 
   .advantages__title {
-    margin: 74px 11px 32px;
+    margin: 74px 0 32px;
   }
 
 
   .advantages__list {
     grid-template-columns: (250px 250px 250px 250px);
-    justify-content: center;
-    column-gap: 70px;
+    justify-content: start;
+    column-gap: 75px;
     margin: 0 auto;
     display: grid;
-  }
-
-  .advantages__item {
-    &::before {
-      left: 5px;
-    }
   }
 }

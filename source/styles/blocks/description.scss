@@ -49,12 +49,12 @@
 @media (min-width: $tablet) {
   .description {
     background: none;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
+    padding: 47px 0 0;
   }
 
   .description__title {
-    margin: 45px 0 60px;
+    margin: 0 30px 60px;
     padding: 0;
     font-size: 60px;
     font-weight: 400;
@@ -69,7 +69,7 @@
     line-height: 24px;
     text-align: left;
     color: #444444;
-    margin: 0 0 55px;
+    margin: 0 30px 55px;
     padding: 0;
     min-width: 708px;
   }
@@ -78,7 +78,7 @@
     min-width: 708px;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 97px;
+    margin: 0 30px 99px;
   }
 
   .description__results {
@@ -112,6 +112,7 @@
     margin: 0;
     position: relative;
     padding-bottom: 75px;
+    padding-top: 0;
   }
 
   .description__wrapper {
@@ -136,26 +137,26 @@
 
   .description__text {
     width: 436px;
-    padding: 70px 266px 15px 10px;
+    padding: 70px 266px 15px 0;
     box-sizing: border-box;
     margin: 0 0 54px;
   }
 
   .description__container {
     display: block;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .description__results {
     position: relative;
-    padding-left: 11px;
+    padding-left: 0;
   }
 
 
   .description__cost {
     text-align: left;
     width: 327px;
-    padding: 54px 11px 0;
+    padding: 54px 0 0;
     display: flex;
     justify-content: space-between;
   }

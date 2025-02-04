@@ -78,18 +78,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    padding-left: 12px;
+    padding: 40px 30px;
+    box-sizing: border-box;
   }
 
   .footer__container {
     border-bottom: unset;
-    padding: 20px;
+    padding: 20px 0;
     margin: 0;
   }
 
   .footer__developer {
     border-top: unset;
-    padding: 14px 42px 0 0;
+    padding: 14px 0 0;
   }
 
   .footer__link {
@@ -99,10 +100,14 @@
 }
 
 @media (min-width: $desktop) {
+  .footer {
+    background-color: #f2f2f2;
+  }
+
   .footer__elements {
     width: 1220px;
     margin: 0 auto;
-    padding: 64px 110px;
+    padding: 65px 0;
   }
 
   .footer__container {
