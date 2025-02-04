@@ -79,15 +79,22 @@
   display: block;
   margin: 0 20px;
   padding: 11px 5px 9px;
+
+  &:hover {
+    background-color: $green2;
+  }
+
+  &:focus {
+    background-color: $green2;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $green2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-.hero__link:hover {
-  background-color: $green2;
-}
-
-.hero__link:active {
-  background-color: $green2;
-}
 
 @media (min-width: $tablet) {
   .hero {
@@ -96,8 +103,8 @@
     margin: 0 auto;
     color: #000000;
     box-sizing: border-box;
-    padding-left: 91px;
-    padding-top: 56px;
+    padding-left: 100px;
+    padding-top: 45px;
     padding-bottom: 528px;
 
     &::before {
@@ -105,8 +112,8 @@
       width: 709px;
       height: 609px;
       position: absolute;
-      bottom: 0;
-      left: 50%;
+      bottom: 3px;
+      left: 51%;
       transform: translate(-50%);
       background: url("../../images/index-can-tablet.png") no-repeat 0 0;
 
@@ -149,7 +156,7 @@
     line-height: 20px;
     text-align: left;
     width: 450px;
-    margin: 0 0 49px;
+    margin: 0 0 48px;
   }
 
   .hero__link {
@@ -157,7 +164,7 @@
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    width: 244px;
+    width: 245px;
     margin: 0;
     box-sizing: border-box;
     padding: 15px 5px 14px;
@@ -208,8 +215,8 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding-right: 650px;
-    padding-left: 80px;
-    padding-top: 87px;
+    padding-left: 90px;
+    padding-top: 86px;
     min-height: 499px;
     position: relative;
     z-index: 10;
@@ -228,7 +235,7 @@
       position: absolute;
       left: 59%;
       top: 5px;
-      margin-left: -273px;
+      margin-left: -262px;
     }
   }
 
@@ -243,12 +250,5 @@
 
   .hero__text {
     margin: 0 0 52px;
-  }
-
-
-  .hero__block {
-    &::before {
-
-    }
   }
 }

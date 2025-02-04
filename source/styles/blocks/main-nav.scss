@@ -5,7 +5,7 @@
 .main-nav__toggle {
   border: none;
   position: absolute;
-  right: 21px;
+  right: 16px;
   top: -45px;
   width: 24px;
   height: 24px;
@@ -55,6 +55,7 @@
   .main-nav__list {
     display: flex;
     margin-left: auto;
+    margin-right: 20px;
     max-width: 600px;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -65,9 +66,10 @@
     display: flex;
     position: static;
   }
-
-  }
+}
 
 @media (min-width: $desktop) {
-
+  .main-nav__list {
+    margin-right: 0;
+  }
 }

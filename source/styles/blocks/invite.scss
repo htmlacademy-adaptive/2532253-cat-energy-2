@@ -1,6 +1,6 @@
 .invite {
   margin: 0 20px;
-  padding: 28px 0 20px;
+  padding: 15px 0 11px;
   display: flex;
   justify-content: space-between;
 }
@@ -27,8 +27,8 @@
 
 @media (min-width: $tablet) {
   .invite {
-    padding: 60px 71px;
-    margin: 0;
+    margin: 0 30px;
+    padding: 61px 39px 61px 40px;
   }
 
   .invite__title {
@@ -57,22 +57,24 @@
 @media (min-width: $desktop) {
   .invite {
     width: 565px;
-    margin: 95px 0 0 -610px;
-    padding: 0;
+    margin: 95px 0 0 -600px;
+    padding: 60px 0;
     z-index: 30;
     position: relative;
     background-color: #ffffff;
     justify-content: center;
     gap: 80px;
     left: 50%;
+    top: -41px;
   }
 
   .invite__title {
-    padding: 40px;
+    padding: 0 28px 0 0;
   }
 
   .invite__text {
     text-align: left;
-    padding: 40px;
+    padding: 0;
   }
 }
+

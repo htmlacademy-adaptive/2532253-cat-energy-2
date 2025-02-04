@@ -29,6 +29,12 @@
   object-fit: cover;
 }
 
+@media (min-width: $tablet) {
+  .map {
+    height: 402px;
+  }
+}
+
 @media (min-width: $desktop) {
   .map {
     position: absolute;

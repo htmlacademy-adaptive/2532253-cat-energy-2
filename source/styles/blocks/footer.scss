@@ -18,26 +18,25 @@
 
 .footer__container {
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
 
 .footer__logo {
   display: block;
   text-align: center;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &active {
+    opacity: 60%;
+  }
 }
 
-.footer__logo:hover {
-  opacity: 80%;
-}
-
-.footer__logo:active {
-  opacity: 60%;
-}
-
-
-.link__developer {
+.footer__developer {
   border-top: 1px solid #d9d9d9;
-  padding: 20px 20px 0;
+  padding: 20px 0 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -46,12 +45,11 @@
 
 .footer__link {
   text-decoration: none;
-  width: 113px;
-  height: 20px;
-}
+  padding-top: 5px;
 
-.footer__link:active {
-  opacity: 30%;
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .footer__pin {
@@ -63,23 +61,24 @@
 
 .footer__pin--active {
   mask: url("../../images/html-academy-pin.svg");
-}
 
-.footer__pin--active:hover {
-  background-color: $green;
-}
+  &:hover {
+    background-color: $green;
+  }
 
-.footer__pin--active:active {
-  background-color: $green;
-  opacity: 30%;
+  &:active {
+    background-color: $green;
+    opacity: 30%;
+  }
 }
-
 
 @media (min-width: $tablet) {
   .footer__elements {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    padding-left: 12px;
   }
 
   .footer__container {
@@ -88,29 +87,38 @@
     margin: 0;
   }
 
-  .link__developer {
+  .footer__developer {
     border-top: unset;
-    padding: 20px;
+    padding: 14px 42px 0 0;
   }
 
   .footer__link {
+    padding-top: 7px;
     padding-right: 23px;
   }
 }
 
 @media (min-width: $desktop) {
+  .footer__elements {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 64px 110px;
+  }
+
   .footer__container {
     padding: 0;
     margin: 0;
   }
 
-  .link__developer {
+  .footer__logo {
+    text-align: left;
+  }
+
+  .footer__developer {
     padding: 0;
   }
-}
 
-@media (min-width: $desktop) {
-  .footer__elements {
-    padding: 66px 110px;
+  .footer__link {
+    padding-top: 2px;
   }
 }

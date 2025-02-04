@@ -1,6 +1,8 @@
 .subscribe {
   position: relative;
+  margin-top: 35px;
 }
+
 
 .subscribe__jacket {
   display: inline-block;
@@ -10,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 20px 40px;
+  margin: 0 20px 38px;
 }
 
 .subscribe__text {
@@ -19,15 +21,19 @@
   line-height: 24px;
   text-align: center;
   margin: 0 аuto;
+  margin-top: 5px;
 }
 
 .subscribe__form {
   margin: 0 auto;
+  padding-top: 9px;
 }
 
 .subscribe__input {
-  border: 1px solid #cdcdcd;
+  border: none;
+  outline: 1px solid #e7e7e7;
   width: 100%;
+  font-family: $oswald;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -37,18 +43,24 @@
   padding: 12px;
   text-align: left;
   box-sizing: border-box;
-}
+  outline-offset: -1px;
 
-.subscribe__input:hover {
-  border: 2px solid #cdcdcd;
-}
+  &:hover {
+    outline: 1px solid #cdcdcd;
+    outline-offset: -1px;
+  }
 
-.subscribe__input:focus {
-  border: 2px solid #444444;
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline-color: #ff8282;
+  }
 }
 
 .subscribe__button {
-  font: $oswald;
+  font-family: $oswald;
   width: 100%;
   padding: 15px;
   font-size: 20px;
@@ -57,12 +69,26 @@
   color: #ffffff;
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $green2;
+  }
+
+  &:focus {
+    background-color: $green2;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $green2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet) {
   .subscribe {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     margin-top: 80px;
   }
 
@@ -72,6 +98,7 @@
 
   .subscribe__container {
     margin: 0 auto;
+    max-width: 635px;
   }
 
   .subscribe__text {
@@ -79,7 +106,8 @@
     font-weight: 400;
     line-height: 32px;
     text-align: center;
-    margin-top: 0;
+    margin-top: 41px;
+    margin-bottom: 15px;
   }
 
   .subscribe__form {
@@ -102,6 +130,10 @@
 }
 
 @media (min-width: $desktop) {
+  .subscribe {
+    margin-top: 99px;
+  }
+
   .subscribe__wrapper-desktop {
     margin: 0 auto;
     width: 1220px;
