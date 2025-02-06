@@ -140,7 +140,19 @@
   }
 
   .product-card__container {
-    width: unset;
-    padding: 21px 0 83px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 0 83px;
+  }
+
+  .product-card__title-all {
+    margin: 0;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+  .product-card__text-all {
+    margin: 0;
+    min-width: unset;
   }
 }
