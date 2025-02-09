@@ -15,7 +15,17 @@
   width: 100%;
   box-sizing: border-box;
   text-decoration: none;
-  background: url("../../images/catbox-mobile.jpg") no-repeat center 0;
+
+
+  background:
+    image-set(
+      url("../../images/catbox-mobile@1x.webp") type("image/webp") 1x no-repeat top center,
+      url("../../images/catbox-mobile@2x.webp") type("image/webp") 2x no-repeat top center,
+      url("../../images/catbox-mobile@1x.png") type("image/png") 1x,
+      url("../../images/catbox-mobile@2x.png") type("image/png") 2x,
+      no-repeat center 0 );
+
+
   background-size: auto 100%;
   position: relative;
 
@@ -60,7 +70,13 @@
 
   .present__link {
     padding: 60px 0 70px;
-    background: url("../../images/catbox-tablet.jpg") no-repeat 0 0;
+    background:
+      image-set(
+        url("../../images/catbox-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/catbox-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/catbox-tablet@1x.png") type("image/png") 1x,
+        url("../../images/catbox-tablet@2x.png") type("image/png") 2x,
+        no-repeat 0 0 );
     background-size: cover;
   }
 
@@ -87,7 +103,13 @@
 
   .present__link {
     padding: 54px 0 46px;
-    background: url("../../images/catbox-desktop.jpg") no-repeat 0 0;
+    background:
+      image-set(
+        url("../../images/catbox-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/catbox-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/catbox-desktop@1x.png") type("image/png") 1x,
+        url("../../images/catbox-desktop@2x.png") type("image/png") 2x,
+        no-repeat 0 0 );
   }
 
   .present__text {
