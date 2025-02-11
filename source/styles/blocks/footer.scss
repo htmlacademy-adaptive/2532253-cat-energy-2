@@ -1,14 +1,9 @@
-.footer {
-
-}
-
 .footer__wrapper {
   display: grid;
   grid-template-columns: 140px 140px;
   padding: 20px;
   gap: 20px;
 }
-
 
 .footer__map {
   max-width: 500px;
@@ -22,17 +17,25 @@
 
 .footer__container {
   border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
 
 .footer__logo {
   display: block;
   text-align: center;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &active {
+    opacity: 60%;
+  }
 }
 
-.link__developer {
+.footer__developer {
   border-top: 1px solid #d9d9d9;
-  padding: 20px 20px 0;
+  padding: 10px 0 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,14 +43,39 @@
 
 .footer__link {
   text-decoration: none;
-  width: 113px;
-  height: 20px;
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #666666;
+
+  &:active {
+    color: #666666;
+    opacity: 30%;
+  }
 }
 
 .footer__pin {
-  text-decoration: none;
   width: 27px;
   height: 34px;
+  text-decoration: none;
+  color: #666666;
+  padding-top: 9px;
+
+  &:hover {
+    color: $green;
+  }
+
+  &:focus {
+    outline: none;
+    color: $green;
+  }
+
+  &:active {
+    color: $green;
+    opacity: 30%;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -55,35 +83,62 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    padding: 40px 30px;
+    box-sizing: border-box;
   }
 
   .footer__container {
     border-bottom: unset;
-    padding: 20px;
+    padding: 20px 0;
     margin: 0;
   }
 
-  .link__developer {
+  .footer__developer {
     border-top: unset;
-    padding: 20px;
+    padding: 6px 0 0;
   }
 
   .footer__link {
-    padding-right: 23px;
-  }
-
-  .footer__pin {
-    // что же ты хочешь
+    padding-right: 22px;
   }
 }
 
 @media (min-width: $desktop) {
+  .footer {
+    background-color: #f2f2f2;
+  }
+
+  .footer__elements {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 64px 0;
+    align-items: center;
+  }
+
   .footer__container {
     padding: 0;
     margin: 0;
   }
 
-  .link__developer {
+  .footer__logo {
+    text-align: left;
+  }
+
+  .footer__developer {
     padding: 0;
+    align-items: center;
+  }
+
+  .footer__link {
+    margin: 0;
+  }
+
+  .footer__words {
+    margin: 0;
+  }
+
+  .footer__pin {
+    padding-top: 0;
   }
 }

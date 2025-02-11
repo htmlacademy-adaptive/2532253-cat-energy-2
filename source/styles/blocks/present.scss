@@ -1,93 +1,123 @@
 .present {
-  width: 280px;
-  height: 290px;
-  margin: 0 auto;
+  margin: 0 20px;
+  position: relative;
+}
+
+.present__link {
+  color: #ffffff;
+  text-align: center;
+  padding: 59px 33px 43px;
+  font-family: $lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  background:
+    image-set(
+      url("../../images/catbox-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/catbox-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/catbox-mobile@1x.png") type("image/png") 1x,
+      url("../../images/catbox-mobile@2x.png") type("image/png") 2x,
+    ) no-repeat center 0;
+
+  background-size: auto 100%;
   position: relative;
 
   &::before {
     content: "";
-    width: 280px;
-    height: 290px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    background: url("../../images/catbox-mobile.jpg") no-repeat 0 0;
-  }
-
-  &::after {
-    content: "";
-    width: 280px;
-    height: 290px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
     background-color: $green;
     opacity: 85%;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
-.present__container {
+.present__text {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
   position: relative;
+  padding-top: 128px;
 
   &::before {
     content: "";
     width: 78px;
     height: 80px;
     position: absolute;
-    top: 50px;
-    left: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
     background-image: url("../../icons/icon_gift.svg");
     z-index: 5;
   }
 }
 
-.present__text {
-  margin: 0 auto;
-  max-width: 161px;
-  position: relative;
-  z-index: 3;
-  font-family: $lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  top: 186px;
-}
-
 @media (min-width: $tablet) {
   .present {
-    margin: 0 auto;
-    min-width: 707px;
-    height: 200px;
-
-    &::before {
-      width: 100%;
-      height: 100%;
-      background: url("../../images/catbox-tablet.jpg") top / auto 100% no-repeat;
-    }
-
-    &::after {
-      width: 100%;
-      height: 200px;
-    }
+    margin: 0 30px;
   }
 
-  .present__container {
-    position: relative;
-
-    &::before {
-      top: 60px;
-    }
+  .present__link {
+    padding: 60px 0 70px;
+    background:
+      image-set(
+        url("../../images/catbox-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/catbox-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/catbox-tablet@1x.png") type("image/png") 1x,
+        url("../../images/catbox-tablet@2x.png") type("image/png") 2x,
+      ) no-repeat 0 0;
+    background-size: cover;
   }
 
   .present__text {
+    padding: 10px 24px 0 341px;
+    width: 547px;
+    margin: 0 auto;
+    box-sizing: border-box;
     text-align: left;
-    top: 70px;
-    left: 60%;
+
+    &::before {
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .present {
+    width: 245px;
     margin: 0;
+  }
+
+  .present__link {
+    padding: 54px 0 46px;
+    background:
+      image-set(
+        url("../../images/catbox-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/catbox-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/catbox-desktop@1x.png") type("image/png") 1x,
+        url("../../images/catbox-desktop@2x.png") type("image/png") 2x,
+      ) no-repeat 0 0;
+  }
+
+  .present__text {
+    width: 170px;
+    padding: 131px 0 0;
+    text-align: center;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 4px;
+    }
   }
 }
