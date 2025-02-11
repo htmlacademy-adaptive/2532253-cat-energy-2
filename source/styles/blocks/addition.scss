@@ -1,3 +1,7 @@
+.addition {
+  padding-top: 20px;
+}
+
 .addition__header {
   position: relative;
 }
@@ -14,12 +18,13 @@
 
 .addition__list {
   list-style: none;
-  padding: 20px;
+  padding: 28px 20px 34px;
+  margin: 0;
 }
 
 .addition__item {
   border-top: 1px solid #cdcdcd;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
@@ -34,7 +39,7 @@
   color: #222222;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 13px;
 }
 
 .addition__text {
@@ -42,14 +47,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  text-align: center;
   color: #444444;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding-top: 14px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .addition__link {
@@ -81,24 +85,26 @@
 
 @media (min-width: $tablet) {
   .addition__about {
-    margin: 48px 0;
+    margin: 45px 0 80px;
+  }
+
+  .addition__list {
+    padding: 30px 30px 70px;
   }
 
   .addition__item {
     border: 1px solid #cdcdcd;
-    padding: 23px 37px 24px;
+    padding: 27px 36px;
     border-bottom: none;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .addition__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .addition__list {
-    padding: 30px 30px 53px;
+    padding: 0;
+    margin: 0;
   }
 
   .addition__tittle {
@@ -106,23 +112,24 @@
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    padding-top: 3px;
+    padding: 0 0 24px;
+    margin: 0;
   }
 
   .addition__text {
-    gap: 55px;
+    gap: 52px;
     font-family: $lato;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: center;
-    padding-bottom: 17px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop) {
   .addition {
-    margin-top: 79px;
+    padding-top: 70px;
   }
 
   .addition__header {
@@ -142,8 +149,7 @@
     display: grid;
     grid-template-columns: 1fr 245px;
     gap: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 49px auto 76px;
   }
 
   .addition__container {
@@ -162,16 +168,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 7px;
+    padding: 18px 0 13px;
   }
 
   .addition__wrapper {
     flex-grow: 1;
-    padding-right: 30px;
+    padding-right: 43px;
+  }
+
+  .addition__tittle {
+    padding: 7px 2px 0;
+    margin: 0;
   }
 
   .addition__text {
-    text-align: left;
-    gap: 180px;
+    gap: 110px;
+    padding: 10px 0 0;
+    justify-content: flex-end;
+  }
+
+  .addition__link {
+    padding: 10px 91px;
   }
 }
