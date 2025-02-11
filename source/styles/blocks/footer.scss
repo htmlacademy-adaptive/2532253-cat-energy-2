@@ -49,6 +49,7 @@
   line-height: 20px;
   text-align: left;
   color: #666666;
+  padding-top: 15px;
 
   &:active {
     color: #666666;
@@ -132,6 +133,7 @@
 
   .footer__link {
     margin: 0;
+    padding-top: 0;
   }
 
   .footer__words {
