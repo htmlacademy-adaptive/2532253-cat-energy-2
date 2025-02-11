@@ -182,9 +182,10 @@
   }
 
   .addition__text {
-    gap: 110px;
+    justify-content: space-between;
+    gap: 0;
     padding: 10px 0 0;
-    justify-content: flex-end;
+    width: 283px;
   }
 
   .addition__link {
