@@ -17,9 +17,9 @@
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
-        <img src="./images/logo-mobile.svg" alt="Логотип кокой">
+        <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" type="image/svg">
+        <source media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="image/svg">
+        <img src="./images/logo-mobile.svg" alt="Логотип кокой" width="33" height="38">
       </picture>
     </a>
     <nav class="main-nav">
@@ -67,26 +67,6 @@
             </li>
           </ul>
         </fieldset>
-
-        <!-- <fieldset class="questionnaire__fieldset  questionnaire__fieldset--info">
-          <legend class="visually-hidden">Сбор информации о котике</legend>
-          <div class="questionnaire__wrapper">
-            <ul class="questionnaire__fieldset-list">
-              <li class="questionnaire__field  field-text  field-text--name">
-                <label class="field-text__label" for="name">Имя:*</label>
-                <input class="field-text__input" type="text" name="name" id="name" placeholder="Барсик" required>
-              </li>
-              <li class="questionnaire__field  field-text  field-text--weight">
-                <label class="field-text__label" for="weight">Вес (кг):*</label>
-                <input class="field-text__input" type="text" name="weight" id="weight" placeholder="7" required>
-              </li>
-              <li class="questionnaire__field  field-text  field-text--age">
-                <label class="field-text__label" for="age">Возраст (лет):</label>
-                <input class="field-text__input" type="text" name="age" id="age" placeholder="7">
-              </li>
-            </ul>
-          </div>
-        </fieldset> -->
       </form>
     </section>
   </main>
@@ -110,7 +90,7 @@
         <a class="footer__logo" href="#">
           <picture>
             <source media="(min-width: 768px)" srcset="./images/logo-mobile-text.svg" type="svg">
-            <img src="./images/logo-mobile-text.svg" alt="Логотип Кэт Энерджи" width="128px" height="24px">
+            <img src="./images/logo-mobile-text.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
           </picture>
         </a>
       </div>
@@ -130,11 +110,15 @@
       </ul>
       <div class="footer__developer">
         <a class="footer__link" href="https://htmlacademy.ru/">
-          <img src="./images/html-academy.svg" alt="Логотип Разработчика">
-          <a class="footer__pin footer__pin--active" href="https://htmlacademy.ru/">
+          <p class="footer__words">HTML Academy</p>
+          <a class="footer__pin" href="https://htmlacademy.ru/">
+            <svg role="img" alt="Логотип Разработчика" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+              <use href="./icons/stack.svg#html-academy-pin"></use>
+            </svg>
           </a>
         </a>
       </div>
+    </div>
     </div>
   </footer>
 </body>

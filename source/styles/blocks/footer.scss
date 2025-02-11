@@ -5,7 +5,6 @@
   gap: 20px;
 }
 
-
 .footer__map {
   max-width: 500px;
 }
@@ -41,7 +40,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 
 .footer__link {
   text-decoration: none;
@@ -114,7 +112,8 @@
   .footer__elements {
     width: 1220px;
     margin: 0 auto;
-    padding: 69px 0;
+    padding: 64px 0;
+    align-items: center;
   }
 
   .footer__container {
@@ -128,6 +127,7 @@
 
   .footer__developer {
     padding: 0;
+    align-items: center;
   }
 
   .footer__link {

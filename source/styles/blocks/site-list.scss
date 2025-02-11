@@ -19,6 +19,18 @@
   display: block;
   text-align: center;
   padding: 24px 5px 21px;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -28,14 +40,6 @@
     line-height: 24px;
     text-align: left;
     padding: 0;
-  }
-
-  .site-list__link:hover {
-    opacity: 60%;
-  }
-
-  .site-list__link:focus {
-    opacity: 60%;
   }
 
   .site-list {

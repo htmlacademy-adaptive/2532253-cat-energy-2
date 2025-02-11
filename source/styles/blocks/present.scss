@@ -16,7 +16,6 @@
   box-sizing: border-box;
   text-decoration: none;
 
-
   background:
     image-set(
       url("../../images/catbox-mobile@1x.webp") type("image/webp") 1x,
@@ -25,10 +24,8 @@
       url("../../images/catbox-mobile@2x.png") type("image/png") 2x,
     ) no-repeat center 0;
 
-
   background-size: auto 100%;
   position: relative;
-
 
   &::before {
     content: "";
