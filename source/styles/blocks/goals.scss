@@ -86,6 +86,7 @@
   line-height: 16px;
   padding-right: 65px;
   display: inline-block;
+  min-width: 150px;
 
   &::after {
     content: "";
@@ -101,10 +102,17 @@
   &:hover::after {
     width: 32px;
   }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
-.goals__link:active {
-  opacity: 30%;
+.goals__point {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
 }
 
 @media (min-width: $tablet) {

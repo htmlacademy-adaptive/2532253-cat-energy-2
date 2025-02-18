@@ -120,6 +120,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 5;
+    padding-top: 71px;
   }
 
   .description__title {
@@ -137,9 +138,9 @@
 
   .description__text {
     width: 436px;
-    padding: 70px 266px 15px 0;
+    padding: 0 266px 69px 0;
     box-sizing: border-box;
-    margin: 0 0 54px;
+    margin: 0;
   }
 
   .description__container {

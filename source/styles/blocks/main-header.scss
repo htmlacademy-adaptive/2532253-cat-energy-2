@@ -10,15 +10,16 @@
   top: 13px;
   left: 20px;
   z-index: 10;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
-.main-header__logo:hover {
-  opacity: 80%;
-}
-
-.main-header__logo:active {
-  opacity: 60%;
-}
 
 @media (min-width: $tablet) {
   .main-header {
