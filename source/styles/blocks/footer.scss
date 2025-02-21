@@ -1,3 +1,10 @@
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  z-index: 5;
+}
+
 .footer__wrapper {
   display: grid;
   grid-template-columns: 140px 140px;
@@ -13,6 +20,7 @@
   background-color: #f2f2f2;
   position: relative;
   padding: 40px 20px;
+  bottom: 0;
 }
 
 .footer__container {
@@ -28,7 +36,7 @@
     opacity: 80%;
   }
 
-  &active {
+  &:active {
     opacity: 60%;
   }
 }
@@ -101,7 +109,7 @@
   }
 
   .footer__link {
-    padding-right: 22px;
+    padding-right: 17px;
   }
 }
 

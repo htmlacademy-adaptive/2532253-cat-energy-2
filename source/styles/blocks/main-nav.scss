@@ -55,8 +55,8 @@
   .main-nav__list {
     display: flex;
     margin-left: auto;
-    margin-right: 20px;
-    max-width: 600px;
+    margin-right: 15px;
+    min-width: 600px;
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 33px;

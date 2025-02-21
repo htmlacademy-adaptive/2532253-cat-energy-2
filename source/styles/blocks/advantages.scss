@@ -77,16 +77,12 @@
   position: relative;
 }
 
-.advantages__number {
-  display: none;
-}
-
 @media (min-width: $tablet) {
   .advantages {
     border-bottom: 1px solid #e6e6e6;
     width: 100%;
     margin: 0;
-    padding: 0 0 9px;
+    padding: 0 0 27px;
   }
 
   .advantages__title {
@@ -101,27 +97,57 @@
   }
 
   .advantages__list {
-    margin-left: -75px;
     display: grid;
-    grid-template-columns: 250px 250px;
-    column-gap: 136px;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 84px 64px;
+    padding: 32px 30px;
   }
 
   .advantages__item {
     position: relative;
     margin: 0;
     padding: 0;
-    min-height: 317px;
-
+    z-index: 2;
 
     &::before {
       content: "";
       width: 80px;
       height: 80px;
-      top: 42px;
+      top: 8px;
+    }
+
+    &::after {
+      content: counter(item);
+      counter-increment: item 1;
+      color: #f2f2f2;
+      z-index: -1;
+      width: 134px;
+      height: 100%;
+      font-family: $oswald, Arial, sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      display: block;
+      position: absolute;
+      top: -31px;
+      right: 67px;
     }
   }
+
+  .advantages__item--boil::after {
+    counter-increment: item 2;
+    right: 75px;
+  }
+
+  .advantages__item--eat::after {
+    counter-increment: item 3;
+    right: 74px;
+  }
+
+  .advantages__item--clock::after {
+    counter-increment: item 4;
+    right: 75px;
+  }
+
 
   .advantages__text {
     font-family: $lato;
@@ -131,18 +157,8 @@
     text-align: left;
     color: #444444;
     width: 250px;
-    margin-top: -127px;
-  }
-
-  .advantages__number {
-    visibility: visible;
-    font-size: 280px;
-    font-weight: 400;
-    line-height: 280px;
-    text-align: center;
-    color: #f2f2f2;
-    padding-left: 103px;
-    display: block;
+    bottom: 43px;
+    padding: 162px 0 0;
   }
 }
 
@@ -159,9 +175,16 @@
 
   .advantages__list {
     grid-template-columns: (250px 250px 250px 250px);
-    justify-content: start;
     column-gap: 75px;
     margin: 0 auto;
     display: grid;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .advantages__item {
+    &::after {
+      right: 0;
+    }
   }
 }
