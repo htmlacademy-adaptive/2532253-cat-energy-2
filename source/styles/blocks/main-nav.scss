@@ -5,7 +5,7 @@
 .main-nav__toggle {
   border: none;
   position: absolute;
-  right: 21px;
+  right: 20px;
   top: -45px;
   width: 24px;
   height: 24px;
@@ -53,13 +53,12 @@
   }
 
   .main-nav__list {
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 33px;
+    width: 441px;
     margin-left: auto;
     margin-right: 15px;
-    min-width: 600px;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 33px;
   }
 
   .main-nav--opened .main-nav__list {
@@ -70,6 +69,9 @@
 
 @media (min-width: $desktop) {
   .main-nav__list {
+    min-width: unset;
+    justify-content: flex-start;
+    width: 478px;
     margin-right: 0;
   }
 }

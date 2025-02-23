@@ -14,45 +14,32 @@
   height: 22px;
   background-color: #666666;
   display: block;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  &:focus {
+    background-color: $green;
+    outline: none;
+  }
+
+  &:active {
+    background-image: $green;
+    opacity: 30%;
+  }
 }
 
 .social__link--vk {
   mask: url("../../icons/vkontakte.svg");
-
-  &:hover {
-    background-color: $green;
-  }
-
-  &:active {
-    background-image: $green;
-    opacity: 30%;
-  }
 }
 
 .social__link--youtube {
   mask: url("../../icons/youtube.svg");
-
-  &:hover {
-    background-color: $green;
-  }
-
-  &:active {
-    background-image: $green;
-    opacity: 30%;
-  }
 }
 
 .social__link--telegram {
   mask: url("../../icons/telegram.svg");
-
-  &:hover {
-    background-color: $green;
-  }
-
-  &:active {
-    background-image: $green;
-    opacity: 30%;
-  }
 }
 
 @media (min-width: $tablet) {
@@ -65,6 +52,6 @@
   .social {
     align-items: center;
     margin: 0;
-    padding-left: 30px;
+    padding-left: 33px;
   }
 }

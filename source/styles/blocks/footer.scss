@@ -19,7 +19,7 @@
 .footer__elements {
   background-color: #f2f2f2;
   position: relative;
-  padding: 40px 20px;
+  padding: 41px 20px;
   bottom: 0;
 }
 
@@ -109,7 +109,7 @@
   }
 
   .footer__link {
-    padding-right: 17px;
+    padding-right: 22px;
   }
 }
 
@@ -121,7 +121,7 @@
   .footer__elements {
     width: 1220px;
     margin: 0 auto;
-    padding: 64px 0;
+    padding: 62px 0;
     align-items: center;
   }
 
@@ -132,6 +132,7 @@
 
   .footer__logo {
     text-align: left;
+    padding-top: 2px;
   }
 
   .footer__developer {
@@ -142,6 +143,7 @@
   .footer__link {
     margin: 0;
     padding-top: 0;
+    padding-right: 24px;
   }
 
   .footer__words {

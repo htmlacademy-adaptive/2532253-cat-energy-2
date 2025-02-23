@@ -6,14 +6,6 @@
 .card__content {
   margin: 0 auto;
   width: 280px;
-  // display: flex;display
-  // flex-direction: column;flex-direction
-  // justify-content: flex-end;justify-content
-
-  // grid-template-rows: auto auto;
-  // grid-template-areas: "card__specification" "card__link";
-  // row-gap: 20px;
-  // display: grid;
 }
 
 .card__specification {
@@ -62,7 +54,7 @@
     margin: 0;
     border: none;
     position: relative;
-    padding: 0 0 41px;
+    padding: 0;
 
     &::before {
       content: "";
@@ -77,19 +69,27 @@
   }
 
   .card__link {
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
   }
 
   .card__content {
     width: 250px;
     margin: 0 auto;
+    padding: 0 0 41px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 41px);
   }
 
   .card__specification {
-    display: flex;
     flex-direction: column;
     margin: 0;
     padding-bottom: 32px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
   }
 
   .card__image {
