@@ -1,4 +1,7 @@
 body {
   margin: 0;
-  font-family: $oswald, Arial, sans-serif;
+  font-family: $oswald;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

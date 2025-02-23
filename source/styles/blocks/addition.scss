@@ -94,7 +94,7 @@
 
   .addition__item {
     border: 1px solid #cdcdcd;
-    padding: 27px 31px 27px 37px;
+    padding: 27px 38px 27px 37px;
     border-bottom: none;
     margin: 0;
   }
@@ -129,7 +129,7 @@
 
 @media (min-width: $desktop) {
   .addition {
-    padding-top: 70px;
+    padding-top: 68px;
   }
 
   .addition__header {
@@ -149,7 +149,7 @@
     display: grid;
     grid-template-columns: 1fr 245px;
     gap: 80px;
-    margin: 49px auto 76px;
+    margin: 47px auto 78px;
   }
 
   .addition__container {

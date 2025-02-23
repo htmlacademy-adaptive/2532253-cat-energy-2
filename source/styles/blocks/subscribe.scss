@@ -54,7 +54,7 @@
     outline: 2px solid #444444;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline-color: #ff8282;
   }
 }
@@ -122,7 +122,7 @@
     min-width: 379px;
     height: 100%;
     box-sizing: border-box;
-    padding: 12px 18px;
+    padding: 12px 13px;
   }
 
   .subscribe__button {
@@ -160,5 +160,6 @@
 
   .subscribe__input {
     min-width: 495px;
+    padding: 12px;
   }
 }
